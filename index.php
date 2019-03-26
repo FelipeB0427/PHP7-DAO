@@ -31,8 +31,17 @@ $usuario->login("Felipe", "124567890");
 echo $usuario;
 */
 
+// Cria um novo usuário.
+/*
 $aluno = new Usuario("aluno", "@lun0");
 $aluno->insert();
 echo $aluno;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(9);
+$usuario->update("Professor", "Pr0f3ss0r");
+echo $usuario;
+
 
  ?>
